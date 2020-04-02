@@ -22,8 +22,13 @@ function random(number) {
 
 button.addEventListener ('click', function(e)   
 {
+   
     const colour = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
     document.body.style.backgroundColor= colour;
         console.log('pressed');
 } 
 );
+
+
+
+
