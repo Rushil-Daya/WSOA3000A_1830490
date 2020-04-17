@@ -12,9 +12,12 @@ function buttonPressed(e) {
 buttonPressed.addEventListener('click' , buttonPressed);
 */
 
-const button = document.body.children[0];
+const button = document.querySelector('button');
 console.log(button);
 console.log('kkklkll');
+
+
+
 
 function random(number) {
     return Math.floor(Math.random() * (number+1));
