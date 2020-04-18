@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Wedding application" content="Application">
+    <meta name= "author" content="Rushil Daya">
+    <script src= "application.js" type= "module" async ></script>
+    <title>Wedding Application</title>
+</head>
+<body>
+    <h1>
+        Wedding Application
+    </h1>
+    <p>
+        I'm sure you've realised that I'm indian. And what do indians do? They get arranged marriages. It's up to the parents to arrange a Rishta(relationship) with a suitable woman of their choice. 
+    </p>
+
+    <p>
+        <h4>Want to marry me?</h4> 
+        Fill in the form below to find out if we would be a good match.
+        If you are your details will be sent through. 
+    </p>
+ 
+       
+    <form>
+        <section>
+            <label for="name">First name:</label>
+            <input id="name" type="text">
+        </section>
+        
+        <section >
+            <label for="age">Age:</label>  
+            <input type="range" min="15" max="100" value="20" class="mySlider" id="ageSlide">
+            <p id="outputAge"> </p>
+        </section>
+        
+        <section>
+            <label for="dhal">Can you make Dhal?</label>
+            <input type="checkbox" id="dhal" value="dhal">
+        </section>
+
+        <section>
+            <label for="cultured">Are you Cultured?  (keen to wear sarees and go to aarti)</label>
+            <input type="checkbox" id= "cultured" value="cultured">
+        </section>
+        
+        <section>
+            <label for="alcohol"> Do you drink alcohol?</label>
+            <input type="checkbox" id="alcohol" value="alcohol">
+        </section>
+        
+        <section>
+           <p>
+            <button type="button" id= "submit">Are we a match?</button>
+           </p> 
+        </section>
+    </form>
+
+    <p id="outputForm"> </p>
+
+</body>
+</html>
