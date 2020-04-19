@@ -16,11 +16,35 @@ var alcohol = document.querySelector("input[id=alcohol]");
 var output= document.getElementById("outputForm");
 
 var submitButton = document.getElementById("submit");
+var refreshButton = document.getElementById("refresh");
+refreshButton.disabled=true;
 var score=0;
+
+refreshButton.addEventListener('click', function(e){
+    refreshButton.disabled=true;
+    score=0;
+    slider.value=18;
+    outputAge.innerHTML= slider.value;
+    dhal.checked=false;
+    cultured.checked=false;
+    alcohol.checked=false;
+    var resetName= document.getElementById("name").value="";
+    document.body.style.backgroundColor= 'rgb(256,256,256)';
+    output.innerHTML= " ";
+    submitButton.disabled=false;
+});
+
+
 
 submitButton.addEventListener('click', function(e) 
 {
     var name = document.getElementById("name").value;
+    if(name.length ==0)
+    {
+        alert("Please enter your name.");
+        return;
+    }
+
     output.innerHTML = name +" we are a " +score + "% match.";
    switch(true)
    {
@@ -31,6 +55,9 @@ submitButton.addEventListener('click', function(e)
         default : document.body.style.backgroundColor= 'rgb(189,177,177)'
     
    }
+
+   submitButton.disabled=true;
+   refreshButton.disabled=false;
 }
 );
 
@@ -41,7 +68,7 @@ age.addEventListener('change', function(e){
         document.body.style.backgroundColor= 'rgb(252,53,3)' ;
         return;
     } else{
-        document.body.style.backgroundColor = 'rgb(256,256,256)'
+        document.body.style.backgroundColor = 'rgb(256,256,256)';
         output.innerHTML= " ";
     }
 
