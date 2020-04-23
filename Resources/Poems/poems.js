@@ -7,27 +7,27 @@ var lovePanel=document.getElementById("lovePanel");
 
 
 sunflowerPanel.addEventListener('mouseover', function(e){
-    document.body.style.backgroundColor= 'rgb(239,245,66)';
-    console.log('hoverSunflower');
+    document.body.style.backgroundColor= 'rgb(217, 210, 115)';
+    
 });
 
 brownboyPanel.addEventListener('mouseover', function(e){
-    document.body.style.backgroundColor= 'rgb(189,143,70)';
+    document.body.style.backgroundColor= 'rgb(222, 199, 138)';
 });
 
 lifePanel.addEventListener('mouseover', function(e){
-    document.body.style.backgroundColor= 'rgb(133,201,101)';
+    document.body.style.backgroundColor= 'rgb(159, 227, 161)';
 });
 
 inspirePanel.addEventListener('mouseover', function(e){
-    document.body.style.backgroundColor= 'rgb(70,211,250)';
+    document.body.style.backgroundColor= 'rgb(188, 234, 235)';
 });
 
 brokenPanel.addEventListener('mouseover', function(e){
     document.body.style.backgroundColor= 'rgb(136,145,145)';
 });
 lovePanel.addEventListener('mouseover', function(e){
-    document.body.style.backgroundColor= 'rgb(255,38,103)';
+    document.body.style.backgroundColor= 'rgb(240, 122, 165)';
 });
 
 
