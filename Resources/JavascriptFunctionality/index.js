@@ -1,13 +1,5 @@
-const button = document.querySelector('button');
-console.log(button);
-console.log('kkklkll');
 
-
-
-
-function random(number) {
-    return Math.floor(Math.random() * (number+1));
-}
+const button =document.getElementById('applicationButton');
 
 button.addEventListener ('click', function(e)   
 {
@@ -15,6 +7,20 @@ button.addEventListener ('click', function(e)
     
 } 
 );
+
+const menuButton= document.getElementById('menuButton');
+var menuItems=  document.getElementById("menuDropdown").style.display= "none";
+menuButton.addEventListener('click', function(e){
+     menuItems=  document.getElementById("menuDropdown");
+    if(menuItems.style.display === "none")
+    {
+        menuItems.style.display = "block"
+    } else{
+        menuItems.style.display = "none";
+    }
+
+    
+});
 
 
 
