@@ -1,13 +1,3 @@
-
-const button =document.getElementById('applicationButton');
-
-button.addEventListener ('click', function(e)   
-{
-    window.location.href = "Application.html";
-    
-} 
-);
-
 const menuButton= document.getElementById('menuButton');
 var menuItems=  document.getElementById("menuDropdown").style.display= "none";
 menuButton.addEventListener('click', function(e){
@@ -21,7 +11,3 @@ menuButton.addEventListener('click', function(e){
 
     
 });
-
-
-
-
