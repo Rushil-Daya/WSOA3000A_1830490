@@ -69,6 +69,6 @@ menuButton.addEventListener('click', function(e){
     } else{
         menuItems.style.display = "none";
     }
-
+    console.log('press')
     
 });
