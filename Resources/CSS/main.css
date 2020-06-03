@@ -1,11 +1,24 @@
+@font-face{
+    font-family: playfair;
+    src:url(../Fonts/PlayfairDisplay-Regular.ttf)
+}
+
+:root{
+    --first-font: playfair;
+    --second-font: ;
+    --main-font: ;
+    font-family: var(--main-font);
+}
+
 html,
 body {
     padding: 0;
-    margin: 20;
+    margin: 5pt;
 }
 
 body {
     max-width: 1050px;
+    font-family: ;
 }
 
 p {
@@ -21,12 +34,60 @@ h4,
 h5,
 h6 {
     text-align: left;
+    font-family: var(--first-font);
 }
+
+nav ul li:hover ul {
+
+    display: block;
+
+}
+
+
+
+.photoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    grid-auto-rows: minmax(20vh,auto);
+}
+
+.photo-box {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.photo-box img {
+    display: block;
+}
+
+
+a:hover {
+    color: teal;
+    font-weight: bold;
+}
+
+
 
 
 
 .welcome {
-    margin: 20pt;
+    margin: 2em;
     align-content: center;
 }
+
+
+.intro {
+    white-space: pre-line;
+    
+}
+
+.poemContent  {
+    white-space: pre-line;
+
+}
+
+
 
