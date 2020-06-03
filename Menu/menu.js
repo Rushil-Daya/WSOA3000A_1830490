@@ -10,6 +10,8 @@ const menuItems = [
     {title: 'Blogs' , link: '/Resources/Blogs' , children: blogsItems},
     {title: 'Poetry', link: '/Resources/Poems'},
     {title: 'Photography', link: '/Resources/Photography'},
+    {title: 'ContactMe', link: '/Resources/Contact'},
+
     
 
 ]

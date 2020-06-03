@@ -1,0 +1,32 @@
+html,
+body {
+    padding: 0;
+    margin: 20;
+}
+
+body {
+    max-width: 1050px;
+}
+
+p {
+    font-size: 15pt;
+    line-height: 17pt;
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: left;
+}
+
+
+
+.welcome {
+    margin: 20pt;
+    align-content: center;
+}
+
