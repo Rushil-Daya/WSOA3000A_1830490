@@ -20,6 +20,8 @@ const createMenuItem = (item)=>{
 
     const li = document.createElement('li');
     const a = document.createElement('a');
+    const div = document.createElement('div')
+    div.className= "menuLine"
     a.innerText=item.title;
     a.href = item.link;
     li.appendChild(a);
@@ -34,9 +36,10 @@ const createMenuItem = (item)=>{
             ul.appendChild(childMenuItem);
         }
         li.appendChild(ul);
+       
     }
    
-    
+    li.appendChild(div);
     return li;
 
 }
@@ -45,10 +48,13 @@ const initialiseMenu= () => {
     const nav= document.querySelector('nav');
 
     const ul = document.createElement('ul');
+   
 
     for(let item of menuItems  )   {
       const li= createMenuItem(item);
+      
       ul.appendChild(li);
+      
     }
 
     nav.appendChild(ul);
