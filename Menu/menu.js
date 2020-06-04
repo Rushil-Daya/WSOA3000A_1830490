@@ -10,7 +10,7 @@ const menuItems = [
     {title: 'Blogs' , link: '/Resources/Blogs' , children: blogsItems},
     {title: 'Poetry', link: '/Resources/Poems'},
     {title: 'Photography', link: '/Resources/Photography'},
-    {title: 'Contact Me', link: '/Resources/Contact'},
+    {title: 'Contact', link: '/Resources/Contact'},
 
     
 
@@ -18,10 +18,12 @@ const menuItems = [
 
 const createMenuItem = (item)=>{
 
-    const li = document.createElement('li');
-    const a = document.createElement('a');
     const div = document.createElement('div')
     div.className= "menuLine"
+    
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    
     a.innerText=item.title;
     a.href = item.link;
     li.appendChild(a);

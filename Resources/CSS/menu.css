@@ -1,0 +1,66 @@
+/*Menu styling*/
+ nav{
+    width: 100vw;
+    top: 0rem;
+    height: 2rem;
+    /*background-color: lightslategray;*/
+}  
+
+/*Menu orientation*/
+nav  ul{
+    list-style: none; /*removes default bullet points*/
+}
+
+/*Menu items details*/
+nav li {
+    position: relative;
+    display: inline-block;
+    width: 7rem;
+}
+
+nav a:hover {
+    color: inherit;
+    font-weight: bold;
+}
+
+/*Hide any drop down menu when not hovering over parent*/
+nav > ul ul {
+    display: none;
+}
+
+/*Display blogs mini-menu when hover over blogs item*/ 
+/*set the child menu of blogs width and make them a list top to bottom*/
+li:hover > ul {
+    position: absolute;
+    display: block;
+    width: 10rem;
+    top: 1.8rem;
+    left: 0rem;
+    font-size: 10pt;
+    /*padding-left: 0.25rem;
+    padding-right: 0rem;*/
+    background-color: whitesmoke;
+}
+
+
+/*Each menu item customise*/
+nav  ul  li a {
+   color:black;
+   padding:0rem; /*padding around each item*/
+   text-decoration: none;  /*remove default underline*/
+   font-size: 15pt;
+}  
+
+
+/*Draw line under menu item when hover*/
+.menuLine {
+    width: 0rem;
+    height: 0.25rem;
+    background: black;
+    transition:  1s;
+}
+
+/*allows to change another div when hover over one div*/
+nav > ul > li  a:hover ~ .menuLine {     
+    width: 5rem;
+}
