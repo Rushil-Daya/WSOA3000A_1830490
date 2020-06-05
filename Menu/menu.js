@@ -11,7 +11,7 @@ const menuItems = [
     {title: 'Blogs' , link: '/Resources/Blogs' , children: blogsItems},
     {title: 'Poetry', link: '/Resources/Poetry'},
     {title: 'Gallery', link: '/Resources/Gallery'},
-    {title: 'Contact', link: '/Resources/Contact'},
+    {title: 'Contact', link: '/Resources/Contact/index.html'},
 
     
 
