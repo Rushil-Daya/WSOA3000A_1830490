@@ -1,6 +1,6 @@
 const blogsItems =[
-    {title: 'Personal' , link: '/Resources/Blogs/Personal' },
-    {title: 'Academic' , link: '/Resources/Blogs/Academic'},
+    {title: 'Personal' , link: '/WSOA3000A_1830490/Resources/Blogs/Personal' },
+    {title: 'Academic' , link: '/WSOA3000A_1830490/Resources/Blogs/Academic'},
 
 ]
 
