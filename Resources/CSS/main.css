@@ -12,13 +12,16 @@
 
 html,
 body {
-    padding: 0;
+    padding: 0.25rem;
     margin: auto;
 }
 
 body {
-    max-width: 1050px;
+    
+    max-width: 80%;
     font-family: ;
+    color: #BAB2B3;
+    
 }
 
 
@@ -27,6 +30,7 @@ p {
     font-size: 15pt;
     line-height: 17pt;
     text-align: justify;
+    color: #123C69
 }
 
 h1,
@@ -41,7 +45,7 @@ h6 {
 
 /*General hover over any a tag on website*/
 a:hover {
-    color: teal;
+    color: whitesmoke;
     font-weight: bold;
 }
 
@@ -49,8 +53,26 @@ a:hover {
 h1.title {
     padding: 0rem;
     margin-bottom: 0rem;
+    color: #AC3B61;
+   
 }
 
+.homepage {
+   
+    /*background-image: url("../Pictures/grey.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 100%;*/
+    
+}  
+/*
+.homePanel {
+    background-color: rgba(245, 245, 245, 0.253);
+    padding: 0.5rem;
+    
+
+}*/
 
 /*Photography Page*/
 .photoGrid {
@@ -93,7 +115,7 @@ h1.title {
 }
 
 /*adding icon after on page links*/
-.links-list a:hover::after {
+.pageLink a:hover::after {
     content: "➥";
 }
 
@@ -101,6 +123,7 @@ h1.title {
 /*Format each poem to be line-by-line*/
 .poemContent  {
     white-space: pre-line;
+    text-align: justify;
 }
 
 

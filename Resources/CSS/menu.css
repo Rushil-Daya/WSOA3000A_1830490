@@ -1,21 +1,33 @@
 /*Menu styling*/
- nav{
-    width: 100vw;
+ul {
+    padding-left: 0rem;
+}  
+
+nav{
+    width: 80%;
     top: 0rem;
     height: 2rem;
     /*background-color: lightslategray;*/
 }  
 
+
 /*Menu orientation*/
 nav  ul{
     list-style: none; /*removes default bullet points*/
+    display: inline-flex;
 }
 
 /*Menu items details*/
 nav li {
     position: relative;
-    display: inline-block;
-    width: 7rem;
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+
+nav ul li {
+    margin-left: 0rem;
 }
 
 nav a:hover {
@@ -34,7 +46,7 @@ li:hover > ul {
     position: absolute;
     display: block;
     width: 10rem;
-    top: 1.8rem;
+    top: 2rem;
     left: 0rem;
     font-size: 10pt;
     /*padding-left: 0.25rem;
@@ -46,9 +58,9 @@ li:hover > ul {
 /*Each menu item customise*/
 nav  ul  li a {
    color:black;
-   padding:0rem; /*padding around each item*/
+   padding:1rem; /*padding around each item*/
    text-decoration: none;  /*remove default underline*/
-   font-size: 15pt;
+   font-size: 16pt;
 }  
 
 

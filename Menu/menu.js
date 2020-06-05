@@ -1,15 +1,16 @@
 const blogsItems =[
-    {title: 'SharukhDaya' , link: '/Resources/Blogs/blog5.html'},
-    {title: 'LivingAtHome' , link: '/Resources/Blogs/champalBlog.html'}
+    {title: 'Personal' , link: '/Resources/Blogs/Personal' },
+    {title: 'Academic' , link: '/Resources/Blogs/Academic'},
 
 ]
+
 
 
 const menuItems = [
     {title: 'Home', link: '/'},
     {title: 'Blogs' , link: '/Resources/Blogs' , children: blogsItems},
-    {title: 'Poetry', link: '/Resources/Poems'},
-    {title: 'Photography', link: '/Resources/Photography'},
+    {title: 'Poetry', link: '/Resources/Poetry'},
+    {title: 'Gallery', link: '/Resources/Gallery'},
     {title: 'Contact', link: '/Resources/Contact'},
 
     
@@ -20,7 +21,7 @@ const createMenuItem = (item)=>{
 
     const div = document.createElement('div')
     div.className= "menuLine"
-    
+
     const li = document.createElement('li');
     const a = document.createElement('a');
     

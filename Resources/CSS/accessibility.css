@@ -1,0 +1,62 @@
+/*This CSS file handles the accessibility of the overall site (for devices such as mobile devices and tablets etc)*/
+
+
+/*Laptop/PC - this customisations are covered in menu.css where other default styling takes place*/
+
+/*smallest average device width is 320px after researching*/
+/*largest average device width is 480px*/
+/*Mobile phone*/ 
+/*Portrait*/
+@media (min-width: 320px) and (max-width: 480px) {   
+
+   p {
+        font-size: 11pt;
+        line-height: 15pt;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 13pt;
+        
+    }
+}
+
+/*Mobile phone landscape*/
+/*max width set to 812px as this was largest value currently for a mobile device (not tablets)*/
+@media (max-width: 812px)  and (orientation: landscape){   
+
+    p {
+        font-size: 13pt;
+    }
+
+    /*menu*/
+    nav ul li a {
+        padding: 1rem;
+        font-size: 16pt;
+    }
+
+}
+
+/*Tablet portrait*/
+/*1024px largest width of current tablets + kindles*/
+@media  (min-width:768px) and (max-width: 1023px) and (orientation:portrait){ 
+
+    p {
+        font-size: 18pt;
+        line-height: 19pt;
+    }
+
+    nav ul li a {
+        padding: 2rem;
+        font-size: 17pt;
+    }
+
+    a {
+        font-size: 15pt;
+    }
+
+} 
+
+
+/*Tablet landscape - very similar to resolution of PC's: no need to detailed cutomisations*/
+
