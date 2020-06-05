@@ -7,10 +7,10 @@ const blogsItems =[
 
 
 const menuItems = [
-    {title: 'Home', link: '/'},
-    {title: 'Blogs' , link: '/Resources/Blogs' , children: blogsItems},
-    {title: 'Poetry', link: '/Resources/Poetry'},
-    {title: 'Gallery', link: '/Resources/Gallery'},
+    {title: 'Home', link: '/WSOA3000A_1830490'},
+    {title: 'Blogs' , link: '/WSOA3000A_1830490/Resources/Blogs' , children: blogsItems},
+    {title: 'Poetry', link: '/WSOA3000A_1830490/Resources/Poetry'},
+    {title: 'Gallery', link: '/WSOA3000A_1830490/Resources/Gallery'},
     {title: 'Contact', link: '/WSOA3000A_1830490/Resources/Contact'},
 
     
