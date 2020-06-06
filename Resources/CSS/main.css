@@ -48,7 +48,8 @@ h6 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     color: #501F3A ;
 }
 
@@ -122,7 +123,8 @@ a {
    
 }
 
-.marryMe {
+.marryMe,
+.technical{
     white-space: pre-line;
 }
 
@@ -136,9 +138,16 @@ a {
 }
 
 /*adding icon after on page links*/
-.pageLink a:hover::after {
-    content: "➥";
+.pageLink a:hover::after,
+.technical a:hover::after 
+{
+    content: " \21AA";
 }
+
+.return a:hover::after  {
+    content: " \21A9" ;
+}
+
 
 /*Poetry*/
 /*Format each poem to be line-by-line*/
