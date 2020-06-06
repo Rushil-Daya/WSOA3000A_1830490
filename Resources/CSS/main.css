@@ -10,6 +10,10 @@
     font-family: var(--main-font);
 }
 
+html {
+    background-color: #E7E3D4;
+}
+
 html,
 body {
     padding: 0.25rem;
@@ -75,8 +79,6 @@ a {
 .homepage {
    
     background-color: #E7E3D4;
-    
-    
 }  
 /*
 .homePanel {
