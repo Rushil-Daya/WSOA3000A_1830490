@@ -184,6 +184,13 @@ body article > h2 {
     color: #464866;
 }
 
+/* Blogs formatting */
+
+section > ul {
+    color: #464866;
+    line-height: 1.5rem;
+
+}
 
 
 
