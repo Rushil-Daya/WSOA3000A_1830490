@@ -3,9 +3,6 @@ const blogsItems =[
     {title: 'Academic' , link: '/WSOA3000A_1830490/Resources/Blogs/Academic'},
 
 ]
-
-
-
 const menuItems = [
    
     {title: 'Home', link: '/WSOA3000A_1830490'},
@@ -13,10 +10,13 @@ const menuItems = [
     {title: 'Poetry', link: '/WSOA3000A_1830490/Resources/Poetry'},
     {title: 'Gallery', link: '/WSOA3000A_1830490/Resources/Gallery'},
     {title: 'Contact', link: '/WSOA3000A_1830490/Resources/Contact'},
-   
+]
 
-    
-    
+const socialItems = [
+    {title: 'Email', link: 'mailto: sharukhdaya@gmail.com'},
+    {title: 'Twitter', link: 'https://twitter.com/DayaSharukh'},
+    {title: 'Instagram', link: 'https://www.instagram.com/sharukhdaya/'},
+
 ]
 
 const createMenuItem = (item)=>{
@@ -61,9 +61,6 @@ const initialiseMenu= () => {
     // const nav= document.querySelector('nav');
     // nav.appendChild(h1Logo);
 
-    
-    
-    
     const nav= document.querySelector('nav');
     const ul = document.createElement('ul');
    
@@ -77,4 +74,44 @@ const initialiseMenu= () => {
     nav.appendChild(ul);
 };
 
+
+const createFooterItem = (itemS)=>{ 
+
+    const div = document.createElement('div')
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    
+    a.innerText=itemS.title;
+    a.href = itemS.link;
+    li.appendChild(a);
+    li.appendChild(div);
+    return li;
+
+
+
+}
+const initialiseFooter= ()=> {
+    const footer = document.querySelector('footer');
+    const ul = document.createElement('ul');
+
+    for (let itemS of socialItems) {
+        const li= createFooterItem(itemS);
+        ul.appendChild(li);
+    }
+
+    footer.appendChild(ul);
+
+    const span = document.createElement('span');
+    span.innerText= "   Copyright 2020- Rushil Daya"
+
+    footer.appendChild(span);
+}
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded",() => initialiseMenu());
+document.addEventListener("DOMContentLoaded",() => initialiseFooter());

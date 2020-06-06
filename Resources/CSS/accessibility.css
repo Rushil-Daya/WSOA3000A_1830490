@@ -15,8 +15,8 @@
     }
 
     nav ul li a {
-        padding: 0.5rem;
-        font-size: 14pt;
+        padding: 0.4rem;
+        font-size: 12pt;
         
     }
 
@@ -25,6 +25,23 @@
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  /*  enable different amount of columns based on current screen size  */
       
     }
+
+    
+    footer {
+       
+        opacity: 0.9;
+        position: relative;
+        top: 8rem;
+        bottom: 0rem;
+        width: 100%;
+
+    }
+
+    footer span {
+        display: inline-block;
+         margin-left: 3rem;
+    }
+
 }
 
 /*Mobile phone landscape*/
@@ -59,6 +76,11 @@
 
     a {
         font-size: 16pt;
+    }
+
+    footer span {
+        display: inline-block;
+         margin-left: 3rem;
     }
 
 } 

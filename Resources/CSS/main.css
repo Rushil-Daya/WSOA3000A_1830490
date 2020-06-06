@@ -59,7 +59,7 @@ h1 {
 
 /*General hover over any a tag on website*/
 a:hover {
-    color: whitesmoke;
+    color: #501F3A;
     font-weight: bold;
 }
 
@@ -73,6 +73,7 @@ a {
 .title {
     padding: 0rem;
     margin-bottom: 0rem;
+    margin-top: 3rem;
     color:#B23850;
    
 }
@@ -189,7 +190,6 @@ section > ul {
     color: #464866;
     line-height: 1.5rem;
 }
-
 
 
 

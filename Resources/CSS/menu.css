@@ -4,10 +4,12 @@ ul {
 }  
 
 nav{
-    width: 80%;
+    width: fit-content;
     top: 0rem;
     height: 2rem;
-    /*background-color: lightslategray;*/
+    position: fixed;
+    background-color: #E7E3D4;
+    opacity: 0.9;
 }  
 
 
@@ -16,6 +18,7 @@ nav  ul{
     list-style: none; /*removes default bullet points*/
     display: inline-flex;
     justify-content: space-evenly;
+    margin-top: 0rem;
 }
 
 /*Menu items details*/
@@ -32,7 +35,7 @@ nav ul li {
 }
 
 nav a:hover {
-    color: inherit;
+   
     font-weight: bold;
 }
 
@@ -53,7 +56,7 @@ li:hover > ul {
     font-size: 10pt;
     /*padding-left: 0.25rem;
     padding-right: 0rem;*/
-    background-color: whitesmoke;
+    background-color: #E7E3D4;
 }
 
 
@@ -72,7 +75,7 @@ nav  ul  li a {
 .menuLine {
     width: 0rem;
     height: 0.25rem;
-    background: black;
+    background:#25274D;
     transition:  1s;
 }
 
@@ -80,3 +83,42 @@ nav  ul  li a {
 nav > ul > li  a:hover ~ .menuLine {     
     width: 5rem;
 }
+
+
+
+/* Styling of footer */
+
+footer {
+    background-color: rgba(128, 128, 128, 0.829);
+    opacity: 0.9;
+    position: relative;
+    top: 8rem;
+    bottom: 0rem;
+    width: 100%;
+
+}
+
+footer ul {
+    
+    list-style: none; /*removes default bullet points*/
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+footer li {
+
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+
+}
+
+footer span {
+
+    display: inline-flex;
+    align-self: flex-end;
+   margin-left: 17rem;
+
+}
+
