@@ -19,6 +19,12 @@
         font-size: 13pt;
         
     }
+
+    /*on mobile devices each coloum size in the grid on the gallery page needs to scale down ie set to 100px*/
+    .photoGrid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  /*  enable different amount of columns based on current screen size  */
+      
+    }
 }
 
 /*Mobile phone landscape*/

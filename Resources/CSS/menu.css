@@ -15,6 +15,7 @@ nav{
 nav  ul{
     list-style: none; /*removes default bullet points*/
     display: inline-flex;
+    justify-content: space-evenly;
 }
 
 /*Menu items details*/
@@ -44,8 +45,9 @@ nav > ul ul {
 /*set the child menu of blogs width and make them a list top to bottom*/
 li:hover > ul {
     position: absolute;
-    display: block;
-    width: 10rem;
+    display: flex;
+    flex-direction: column;   /* to allow mini menu to display top to bottom*/
+    width: fit-content;  /*the mini menu width will auto resize if in future longer words than "personal" or "academic" are used*/
     top: 2rem;
     left: 0rem;
     font-size: 10pt;
@@ -61,7 +63,9 @@ nav  ul  li a {
    padding:1rem; /*padding around each item*/
    text-decoration: none;  /*remove default underline*/
    font-size: 16pt;
+   align-self: flex-start;
 }  
+
 
 
 /*Draw line under menu item when hover*/

@@ -74,12 +74,12 @@ h1.title {
 
 }*/
 
-/*Photography Page*/
+/*Gallery Page*/
+/* Container element set to use CSS grid (most suitable to achieve a grid photo layout) */
 .photoGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2%;
-   
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /*  enable different amoutn of columns based on current screen size  */
+    grid-gap: 1rem;
 }
 
 /*Each picture element on page*/
@@ -97,7 +97,8 @@ h1.title {
 
 
 .profilePic{
-   
+    display: flex;
+    justify-content: center;
     width: 9rem;
     height: 13rem;
 }
@@ -110,6 +111,8 @@ h1.title {
 /*intro paragraph above profile picture on homepage*/
 .intro {
     white-space: pre-line;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 0.1rem;
     padding: 0rem;
 }
