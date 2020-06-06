@@ -7,6 +7,7 @@ const blogsItems =[
 
 
 const menuItems = [
+   
     {title: 'Home', link: '/WSOA3000A_1830490'},
     {title: 'Blogs' , link: '/WSOA3000A_1830490/Resources/Blogs' , children: blogsItems},
     {title: 'Poetry', link: '/WSOA3000A_1830490/Resources/Poetry'},
@@ -48,11 +49,23 @@ const createMenuItem = (item)=>{
 }
 
 const initialiseMenu= () => {
-    const nav= document.querySelector('nav');
+    
+    // const logo = document.createElement('a');
+    // logo.innerText = 'Sharukh Daya';
+    // logo.href ='/WSOA3000A_1830490';
+    // const h1Logo= document.createElement('h1');
+    // h1Logo.className= 'title';
+    // h1Logo.appendChild(logo);
 
+    // const nav= document.querySelector('nav');
+    // nav.appendChild(h1Logo);
+
+    
+    
+    
+    const nav= document.querySelector('nav');
     const ul = document.createElement('ul');
    
-
     for(let item of menuItems  )   {
       const li= createMenuItem(item);
       

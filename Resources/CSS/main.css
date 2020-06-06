@@ -27,8 +27,8 @@ body {
 
 
 p {
-    font-size: 15pt;
-    line-height: 17pt;
+    font-size: 14pt;
+    line-height: 16pt;
     text-align: justify;
     color: #25274D;
 }
@@ -57,8 +57,11 @@ a:hover {
 a {
     color: #464866;
 }
+
+
+
 /*Title styling*/
-h1.title {
+.title {
     padding: 0rem;
     margin-bottom: 0rem;
     color:#B23850;
