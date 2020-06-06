@@ -30,7 +30,7 @@ p {
     font-size: 15pt;
     line-height: 17pt;
     text-align: justify;
-    color: #123C69
+    color: #25274D;
 }
 
 h1,
@@ -43,27 +43,32 @@ h6 {
     font-family: var(--first-font);
 }
 
+h2,
+h3 {
+    color: #2E9CCA ;
+}
+
 /*General hover over any a tag on website*/
 a:hover {
     color: whitesmoke;
     font-weight: bold;
 }
 
+a {
+    color: #464866;
+}
 /*Title styling*/
 h1.title {
     padding: 0rem;
     margin-bottom: 0rem;
-    color: #AC3B61;
+    color:#B23850;
    
 }
 
 .homepage {
    
-    /*background-image: url("../Pictures/grey.jpg");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: repeat-y;
-    background-size: 100%;*/
+    background-color: #C5C6C7
+    
     
 }  
 /*

@@ -59,7 +59,7 @@ li:hover > ul {
 
 /*Each menu item customise*/
 nav  ul  li a {
-   color:black;
+   color: #501F3A;
    padding:1rem; /*padding around each item*/
    text-decoration: none;  /*remove default underline*/
    font-size: 16pt;
