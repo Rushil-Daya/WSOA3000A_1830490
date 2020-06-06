@@ -151,9 +151,31 @@ a {
 
 /*Poetry*/
 /*Format each poem to be line-by-line*/
+
+.poems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  /*  enable different amount of columns based on current screen size  */
+    grid-gap: 3rem;
+    justify-content: space-evenly;
+    position: relative;
+}
+
 .poemContent  {
     white-space: pre-line;
-    text-align: justify;
+    text-align: center;
+    color: #25274D;
+}
+
+.sunflowerPanel:hover {
+    opacity: 0.9;
+    transition: 0.6s;
+    background-image: url(../Pictures/Sunflower.png);
+    /* background-color: #F8E9A1;  */
+    
+}
+
+body article > h2 {
+    text-align: center;
 }
 
 
