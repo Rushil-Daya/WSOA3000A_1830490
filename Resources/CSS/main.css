@@ -45,7 +45,11 @@ h6 {
 
 h2,
 h3 {
-    color: #2E9CCA ;
+    color: #501F3A ;
+}
+
+h1 {
+    color: #B23850;
 }
 
 /*General hover over any a tag on website*/
@@ -70,7 +74,7 @@ a {
 
 .homepage {
    
-    background-color: #C5C6C7
+    background-color: #E7E3D4;
     
     
 }  
@@ -116,6 +120,10 @@ a {
    
 }
 
+.marryMe {
+    white-space: pre-line;
+}
+
 /*intro paragraph above profile picture on homepage*/
 .intro {
     white-space: pre-line;
@@ -136,6 +144,14 @@ a {
     white-space: pre-line;
     text-align: justify;
 }
+
+
+/* Wedding application form */
+.form {
+    color: #464866;
+}
+
+
 
 
 
