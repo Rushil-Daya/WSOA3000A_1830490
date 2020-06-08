@@ -8,7 +8,7 @@ nav{
     top: 0rem;
     height: 2rem;
     position: fixed;
-    background-color: #E7E3D4;
+    background-color: #F6FFF8;
     opacity: 0.9;
 }  
 
@@ -56,7 +56,7 @@ li:hover > ul {
     font-size: 10pt;
     /*padding-left: 0.25rem;
     padding-right: 0rem;*/
-    background-color: #E7E3D4;
+    background-color: #F6FFF8;
 }
 
 

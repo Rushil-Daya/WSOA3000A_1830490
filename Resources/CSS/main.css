@@ -11,7 +11,7 @@
 }
 
 html {
-    background-color: #E7E3D4;
+    background-color: #F6FFF8;
 }
 
 html,
@@ -24,7 +24,7 @@ body {
     
     max-width: 80%;
     font-family: ;
-    color: #BAB2B3;
+    background-color: #F6FFF8;
     
 }
 
@@ -80,7 +80,7 @@ a {
 
 .homepage {
    
-    background-color: #E7E3D4;
+    background-color: #F6FFF8;
 }  
 /*
 .homePanel {
