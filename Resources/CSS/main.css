@@ -68,6 +68,14 @@ h1 {
     color: #B23850;
 }
 
+.apply{
+    padding: 0.2rem;
+}
+
+.apply:hover::after {
+    content:  "💌";
+}
+
 /*General hover over any a tag on website*/
 a:hover {
     color: #501F3A;
