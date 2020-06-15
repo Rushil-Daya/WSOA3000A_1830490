@@ -3,9 +3,19 @@
     src:url(../Fonts/PlayfairDisplay-Regular.ttf)
 }
 
+@font-face{
+    font-family: openSans;
+    src: url(../Fonts/OpenSans-Light.ttf);
+}
+
+@font-face{
+    font-family: openSansCondensed;
+    src: url(../Fonts/OpenSansCondensed-Light.ttf);
+}
 :root{
     --first-font: playfair;
-    --second-font: ;
+    --second-font: openSans;
+    --third-font: openSansCondensed;
     --main-font: ;
     font-family: var(--main-font);
 }
@@ -23,8 +33,9 @@ body {
 body {
     
     max-width: 80%;
-    font-family: ;
+    font-family: var(--third-font);
     background-color: #F6FFF8;
+
     
 }
 
