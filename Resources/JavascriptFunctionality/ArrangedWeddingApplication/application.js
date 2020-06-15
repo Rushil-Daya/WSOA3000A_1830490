@@ -30,7 +30,7 @@ refreshButton.addEventListener('click', function(e){
     alcohol.checked=false;
     var resetName= document.getElementById("name").value="";
     document.body.style.backgroundColor= 'rgb(256,256,256)';
-    output.innerHTML= " ";
+    output.innerText= " ";
     submitButton.disabled=false;
 });
 
@@ -45,7 +45,7 @@ submitButton.addEventListener('click', function(e)
         return;
     }
 
-    output.innerHTML = name +" we are a " +score + "% match.";
+    output.innerText = name +" we are a " +score + "% match.";
    switch(true)
    {
         case (score >= '70') : document.body.style.backgroundColor= 'rgb(104,217,115)';
@@ -64,12 +64,12 @@ submitButton.addEventListener('click', function(e)
 age.addEventListener('change', function(e){
     if ( this.value >= '60'  )
     {
-        output.innerHTML = "Sorry you are too old :(" ;
+        output.innerText = "Sorry, you are too old :(" ;
         document.body.style.backgroundColor= 'rgb(252,53,3)' ;
         return;
     } else{
         document.body.style.backgroundColor = 'rgb(256,256,256)';
-        output.innerHTML= " ";
+        output.innerText= " ";
     }
 
     if (  this.value<25  && slider.value>18 )
