@@ -90,7 +90,7 @@ nav > ul > li  a:hover ~ .menuLine {
 /* Styling of footer */
 
 footer {
-    background-color: rgba(128, 128, 128, 0.829);
+    background-color: rgba(185, 180, 180, 0.473);
     opacity: 0.9;
     position: relative;
     top: 8rem;
