@@ -186,7 +186,9 @@ a {
     color: #25274D;
 }
 
-
+.poemPicture{
+    text-align: center;
+}
 
 body article > h2 {
     text-align: center;
