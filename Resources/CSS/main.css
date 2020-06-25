@@ -107,13 +107,11 @@ a {
 .pageLink ul{
     list-style: none;
 }
-/*
-.homePanel {
-    background-color: rgba(245, 245, 245, 0.253);
-    padding: 0.5rem;
-    
 
-}*/
+
+.about{
+    width: 65rem ;
+}
 
 /*Gallery Page*/
 /* Container element set to use CSS grid (most suitable to achieve a grid photo layout) */
