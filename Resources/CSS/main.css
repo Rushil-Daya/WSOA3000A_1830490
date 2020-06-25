@@ -56,6 +56,7 @@ h5,
 h6 {
     text-align: left;
     font-family: var(--first-font);
+    padding-top: 1rem;
 }
 
 h2,
@@ -208,6 +209,12 @@ body article > h2 {
 section > ul {
     color: #464866;
     line-height: 1.5rem;
+}
+
+
+.blogsList ul li{
+    padding-top: 0.2rem;
+    list-style: square;
 }
 
 
