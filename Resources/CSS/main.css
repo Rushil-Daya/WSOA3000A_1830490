@@ -77,6 +77,7 @@ h1 {
     content:  "💌";
 }
 
+
 /*General hover over any a tag on website*/
 a:hover {
     color: #501F3A;
@@ -102,6 +103,10 @@ a {
    
     background-color: #F6FFF8;
 }  
+
+.pageLink ul{
+    list-style: none;
+}
 /*
 .homePanel {
     background-color: rgba(245, 245, 245, 0.253);
