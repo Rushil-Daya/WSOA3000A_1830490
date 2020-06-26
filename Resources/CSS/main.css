@@ -184,6 +184,11 @@ a {
     grid-gap: 3rem;
     justify-content: space-evenly;
     position: relative;
+    
+}
+
+.poems section ul li {
+    list-style: square;
 }
 
 .poemContent  {
