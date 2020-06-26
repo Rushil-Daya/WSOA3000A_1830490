@@ -206,6 +206,8 @@ body article > h2 {
     color: #464866;
 }
 
+
+
 /* Blogs formatting */
 section > ul {
     color: #464866;
@@ -217,6 +219,14 @@ section > ul {
     padding-top: 0.2rem;
     list-style: square;
 }
+
+
+/* Contact page  */
+
+.contactLink{
+    width: 3rem;
+}
+
 
 
 
