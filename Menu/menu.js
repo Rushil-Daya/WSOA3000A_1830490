@@ -77,7 +77,7 @@ const initialiseMenu= () => {
 
 const createFooterItem = (itemS)=>{ 
 
-    const div = document.createElement('div')
+    // const div = document.createElement('div')
     const li = document.createElement('li');
     const a = document.createElement('a');
     
@@ -87,10 +87,11 @@ const createFooterItem = (itemS)=>{
 
     a.innerText=itemS.title;
     a.href = itemS.link;
+    // image.appendChild(a)
     li.appendChild(image);
     li.appendChild(a);
     
-    li.appendChild(div);
+    // li.appendChild(div);
     return li;
 
 
@@ -109,7 +110,7 @@ const initialiseFooter= ()=> {
     footer.appendChild(ul);
 
     const span = document.createElement('span');
-    span.innerText= "  © 2020, Rushil Daya" 
+    span.innerText= "© 2020, Rushil Daya" 
 
     footer.appendChild(span);
 }

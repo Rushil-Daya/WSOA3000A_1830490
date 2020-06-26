@@ -96,6 +96,7 @@ footer {
     top: 8rem;
     bottom: 0rem;
     width: 100%;
+    display: inline-flex;
 
 }
 
@@ -106,20 +107,24 @@ footer ul {
     justify-content: space-evenly;
 }
 
-footer li {
+footer ul li {
 
     position: relative;
-    display: block;
-    width: 100%;
-    margin-left: 1rem;
+    display: inline-flex;
+    width: 5rem;
+    margin-left: 0.3rem;
+    
 
 }
 
-footer span {
+.socialLink{
+    width: 35%;
+}
 
-    display: inline-flex;
-    align-self: flex-end;
-   margin-left: 17rem;
+
+footer span {
+    margin-left: 7rem;
+    margin-top: 1rem;
 
 }
 
