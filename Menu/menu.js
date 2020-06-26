@@ -13,9 +13,9 @@ const menuItems = [
 ]
 
 const socialItems = [
-    {title: 'Email', link: 'mailto: sharukhdaya@gmail.com', src: '/WSOA3000A_1830490/Resources/Pictures/inst.png'},
-    {title: 'Twitter', link: 'https://twitter.com/DayaSharukh'},
-    {title: 'Instagram', link: 'https://www.instagram.com/sharukhdaya/'},
+    {title: 'Email', link: 'mailto: sharukhdaya@gmail.com', src: '/WSOA3000A_1830490/Resources/Pictures/email.png'},
+    {title: 'Twitter', link: 'https://twitter.com/DayaSharukh', src: '/WSOA3000A_1830490/Resources/Pictures/twitter.png' },
+    {title: 'Instagram', link: 'https://www.instagram.com/sharukhdaya/' ,  src: '/WSOA3000A_1830490/Resources/Pictures/inst.png'},
 
 ]
 
@@ -27,7 +27,7 @@ const createMenuItem = (item)=>{
     const li = document.createElement('li');
     const a = document.createElement('a');
     
-    a.innerText=item.title;
+     a.innerText=item.title;
     a.href = item.link;
     li.appendChild(a);
     if(item.children  && item.children.length)
@@ -87,8 +87,9 @@ const createFooterItem = (itemS)=>{
 
     a.innerText=itemS.title;
     a.href = itemS.link;
-    li.appendChild(a);
     li.appendChild(image);
+    li.appendChild(a);
+    
     li.appendChild(div);
     return li;
 
