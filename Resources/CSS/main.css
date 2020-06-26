@@ -89,7 +89,9 @@ a {
     color: #464866;
 }
 
-
+.socialLink{
+    width: 10%;
+}
 
 /*Title styling*/
 .title {
