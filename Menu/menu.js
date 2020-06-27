@@ -16,6 +16,8 @@ const socialItems = [
     {title: 'Email', link: 'mailto: sharukhdaya@gmail.com', src: '/WSOA3000A_1830490/Resources/Pictures/email.png'},
     {title: 'Twitter', link: 'https://twitter.com/DayaSharukh', src: '/WSOA3000A_1830490/Resources/Pictures/twitter.png' },
     {title: 'Instagram', link: 'https://www.instagram.com/sharukhdaya/' ,  src: '/WSOA3000A_1830490/Resources/Pictures/inst.png'},
+    {title: 'Copyright 2020, Rushil Daya', src: '/WSOA3000A_1830490/Resources/Pictures/copyright.png'}
+   
 
 ]
 
@@ -109,10 +111,10 @@ const initialiseFooter= ()=> {
 
     footer.appendChild(ul);
 
-    const span = document.createElement('span');
-    span.innerText= "© 2020, Rushil Daya" 
+    //  const div = document.createElement('div');
+    //  div.innerText= "© 2020, Rushil Daya" 
 
-    footer.appendChild(span);
+    //  footer.appendChild(div);
 }
 
 

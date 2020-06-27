@@ -112,7 +112,11 @@ a {
 
 
 .about{
-    width: 65rem ;
+    /* width: 65rem ; */
+    
+    text-align: justify;
+    color: #25274D;
+
 }
 
 /*Gallery Page*/
@@ -143,11 +147,7 @@ a {
     width: 9rem;
     height: 13rem;
 }
-.welcome {
-    margin: 0.5rem;
-    align-content: center;
-   
-}
+
 
 .marryMe,
 .technical{

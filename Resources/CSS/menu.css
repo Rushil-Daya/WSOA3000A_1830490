@@ -96,7 +96,7 @@ footer {
     top: 8rem;
     bottom: 0rem;
     width: 100%;
-    display: inline-flex;
+    display: grid;
 
 }
 
@@ -104,13 +104,14 @@ footer ul {
     
     list-style: none; /*removes default bullet points*/
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: start;
+   
 }
 
 footer ul li {
 
     position: relative;
-    display: inline-flex;
+    
     width: 5rem;
     margin-left: 0.3rem;
     
@@ -122,8 +123,9 @@ footer ul li {
 }
 
 
-footer span {
+footer div {
     margin-left: 7rem;
+    
     margin-top: 1rem;
 
 }
