@@ -64,7 +64,7 @@ var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
-    console.log(numberMatches);
+    
 
     try {
         var gender = document.querySelector('input[name="gender"]:checked').value;
@@ -76,16 +76,16 @@ findMatchesButton.addEventListener('click', function(e)
     }
    
 
-    
-    try{
-        var location=document.getElementById("locations").value;
-        
-        
-    }
-    catch(error){
+    var location=document.getElementById("locations").value;
+    if(location=='')
+    {
+        console.log('empty location');
         alert("Please choose a region");
         return;
-    }
+        
+    } 
+    
+    
 
     
 
