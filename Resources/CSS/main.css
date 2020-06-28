@@ -171,6 +171,15 @@ a {
 .overlay a:hover{
     color: white;
 }
+
+
+.copyrightImages{
+    font-size: 10pt;
+    display: flex;
+    justify-content: flex-end;
+}
+}
+
 .profilePic{
     display: flex;
     justify-content: center;
@@ -183,6 +192,7 @@ a {
 .technical{
     white-space: pre-line;
 }
+
 
 /*intro paragraph above profile picture on homepage*/
 .intro {
