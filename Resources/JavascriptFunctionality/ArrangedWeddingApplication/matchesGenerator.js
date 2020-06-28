@@ -12,6 +12,9 @@
 //     document.querySelector('img').src = result.results[0].picture.large;
 // }
 
+var resetButton = document.querySelector('#reset');
+resetButton.disabled=true;
+
 
 
 
@@ -27,10 +30,27 @@ sliderNumber.addEventListener('input', function(){
 },false);
 
 
+
+resetButton.addEventListener('click', function(e){
+
+    resetButton.disabled=true;
+    var numberMatches= document.querySelector("input[id=numberMatches]").value=0;
+    outputNumber.innerHTML= numberMatches;
+
+    var radios = document.getElementsByName("gender");
+    for(var index=0; index<radios.length; index++)
+       radios[index].checked = false;
+    
+});
+
+
+
+
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
-    
+    resetButton.disabled=false;
+
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
 
