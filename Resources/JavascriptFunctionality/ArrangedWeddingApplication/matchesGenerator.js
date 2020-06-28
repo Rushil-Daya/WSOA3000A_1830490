@@ -23,8 +23,8 @@ findMatchesButton.addEventListener('click', function(e)
         var numberMatches= document.querySelector("input[id=numberMatches]").value;
        
 
-        var male = document.querySelector("input[id=male]").value;
-        console.log(male);
+        var gender = document.querySelector('input[name="gender"]:checked').value
+        console.log(gender);
     
     fetch('https://randomuser.me/api/?results=3&gender=female&inc=name,email,picture')
     .then((x) => x.json())
