@@ -16,17 +16,40 @@
 
 
 
+var outputNumber= document.getElementById("outputNumber");
+
+
+var sliderNumber= document.getElementById("numberMatches");
+sliderNumber.addEventListener('input', function(){
+    var numberMatches= document.querySelector("input[id=numberMatches]").value;
+    outputNumber.innerHTML= numberMatches;
+},false);
+
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
     
-        var numberMatches= document.querySelector("input[id=numberMatches]").value;
-       
+    var numberMatches= document.querySelector("input[id=numberMatches]").value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
 
-        var gender = document.querySelector('input[name="gender"]:checked').value
-        console.log(gender);
     
-    fetch('https://randomuser.me/api/?results=3&gender=female&inc=name,email,picture')
+    var searchString='https://randomuser.me/api/?'
+    searchString= searchString+ 'results=' + numberMatches +"&gender=" + gender;
+     
+    searchString= searchString + '&inc=name,email,picture';
+
+    console.log(searchString);
+    
+
+
+    
+    
+        
+        
+        
+        
+    
+    fetch(searchString)
     .then((x) => x.json())
     .then((response) => {
         
