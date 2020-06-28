@@ -3,7 +3,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /*  enable different amount of columns based on current screen size  */
-    grid-gap: 1.25rem;
+    grid-gap: 2.5rem;
 }
 
 .match div {
