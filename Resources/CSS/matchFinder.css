@@ -1,5 +1,5 @@
 .matchesGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /*  enable different amoutn of columns based on current screen size  */
-    grid-gap: 1rem;
+    grid-gap: 1.25rem;
 }

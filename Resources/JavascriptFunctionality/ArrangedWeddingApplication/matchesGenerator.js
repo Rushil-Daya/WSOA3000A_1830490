@@ -20,10 +20,12 @@ var outputNumber= document.getElementById("outputNumber");
 
 
 var sliderNumber= document.getElementById("numberMatches");
+
 sliderNumber.addEventListener('input', function(){
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
     outputNumber.innerHTML= numberMatches;
 },false);
+
 
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
@@ -69,16 +71,14 @@ const search = (result) => {
         section.appendChild(img);
 
         
-        const spanEmail= document.createElement('span');
+        const spanEmail= document.createElement('a');
+        spanEmail.className= 'apply'
         var email= matchItem.email;
         var correctEmail= email.replace("example", "gmail");
-        spanEmail.innerText=correctEmail;
+        spanEmail.href= 'mailto: '+ correctEmail;
+        spanEmail.innerText= correctEmail;
         section.appendChild(spanEmail);
 
-
-        
-
-        
 
         matchesGrid.appendChild(section);
 
