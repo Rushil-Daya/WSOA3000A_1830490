@@ -67,7 +67,7 @@ findMatchesButton.addEventListener('click', function(e)
     }
     catch(error){
         alert("Please select a gender.");
-        return;
+        return null;
     }
    
 
