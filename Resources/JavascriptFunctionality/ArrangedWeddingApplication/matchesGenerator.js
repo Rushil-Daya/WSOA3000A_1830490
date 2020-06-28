@@ -44,7 +44,7 @@ resetButton.addEventListener('click', function(e){
        radios[index].checked = false;
 
     resetMatchPictures('match');
-    var location=document.getElementById("locations").selected=0;
+    var location=document.getElementById("locations").selectedIndex=0;
     
 });
 
