@@ -58,10 +58,13 @@ function resetMatchPictures(className){
 };
 
 
+
+
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
+    console.log(numberMatches);
 
     try {
         var gender = document.querySelector('input[name="gender"]:checked').value;
