@@ -35,26 +35,15 @@ findMatchesButton.addEventListener('click', function(e)
     
     var searchString='https://randomuser.me/api/?'
     searchString= searchString+ 'results=' + numberMatches +"&gender=" + gender;
-     
     searchString= searchString + '&inc=name,email,picture';
-
-    console.log(searchString);
     
-
-
-    
-    
-        
-        
-        
-        
     
     fetch(searchString)
     .then((x) => x.json())
     .then((response) => {
         
         console.log(response);
-        search(response);
+        
     
     });
 }
@@ -87,9 +76,7 @@ const search = (result) => {
         section.appendChild(spanEmail);
 
 
-        
-
-        
+    
 
         matchesGrid.appendChild(section);
 
