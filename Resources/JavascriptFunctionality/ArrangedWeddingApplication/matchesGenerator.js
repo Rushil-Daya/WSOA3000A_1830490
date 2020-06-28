@@ -45,6 +45,8 @@ resetButton.addEventListener('click', function(e){
 
     resetMatchPictures('match');
     var location=document.getElementById("locations").selectedIndex=0;
+    const headingLocation=document.querySelector('#headingLocation');
+   headingLocation.innerText=null;
     
 });
 
@@ -94,7 +96,8 @@ findMatchesButton.addEventListener('click', function(e)
     resetButton.disabled=false;
     findMatchesButton.disabled=true;
 
-   
+   const headingLocation=document.querySelector('#headingLocation');
+   headingLocation.innerText= "Your matches in: " +location;
     
     var searchString='https://randomuser.me/api/?'
     searchString= searchString+ 'results=' + numberMatches +"&gender=" + gender;
@@ -109,6 +112,8 @@ findMatchesButton.addEventListener('click', function(e)
         search(response);
     
     });
+
+
 }
 );
 
