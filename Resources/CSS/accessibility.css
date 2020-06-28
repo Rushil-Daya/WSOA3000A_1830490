@@ -44,9 +44,15 @@
     }
 
     
-.socialLink{
-    width: 71%;
-}
+    .socialLink{
+        width: 71%;
+    }
+
+    .matchesGrid{
+    
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  /*  enable different amount of columns based on current screen size  */
+        grid-gap: 1.5rem;
+    }
 
 }
 
