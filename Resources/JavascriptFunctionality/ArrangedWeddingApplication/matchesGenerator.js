@@ -34,26 +34,41 @@ sliderNumber.addEventListener('input', function(){
 resetButton.addEventListener('click', function(e){
 
     resetButton.disabled=true;
-    var numberMatches= document.querySelector("input[id=numberMatches]").value=0;
+    findMatchesButton.disabled=false;
+    var numberMatches= document.querySelector("input[id=numberMatches]").value=1;
     outputNumber.innerHTML= numberMatches;
 
     var radios = document.getElementsByName("gender");
     for(var index=0; index<radios.length; index++)
        radios[index].checked = false;
+
+    resetMatchPictures('match');
+
     
 });
 
-
+function resetMatchPictures(className){
+    var matches = document.getElementsByClassName(className);
+    while(matches.length > 0){
+        matches[0].parentNode.removeChild(matches[0]);
+    }
+};
 
 
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
-    resetButton.disabled=false;
-
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
 
+    // Data validation
+    if()
+   
+   
+    resetButton.disabled=false;
+    findMatchesButton.disabled=true;
+
+   
     
     var searchString='https://randomuser.me/api/?'
     searchString= searchString+ 'results=' + numberMatches +"&gender=" + gender;
