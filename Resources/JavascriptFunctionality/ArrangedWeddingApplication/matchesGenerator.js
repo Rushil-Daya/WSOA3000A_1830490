@@ -18,7 +18,7 @@
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
-    fetch('https://randomuser.me/api/?results=3&gender=female&inc=name,email,picture,dob')
+    fetch('https://randomuser.me/api/?results=3&gender=female&inc=name,email,picture')
     .then((x) => x.json())
     .then((response) => {
         
@@ -56,9 +56,7 @@ const search = (result) => {
         section.appendChild(spanEmail);
 
 
-        const spanAge =document.createElement('span');
-        spanAge.innerText= matchItem.dob.age;
-        section.appendChild(spanAge);
+        
 
         
 
