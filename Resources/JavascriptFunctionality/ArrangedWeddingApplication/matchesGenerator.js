@@ -15,9 +15,17 @@
 
 
 
+
 var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
+    
+        var numberMatches= document.querySelector("input[id=numberMatches]").value;
+       
+
+        var male = document.querySelector("input[id=male]").value;
+        console.log(male);
+    
     fetch('https://randomuser.me/api/?results=3&gender=female&inc=name,email,picture')
     .then((x) => x.json())
     .then((response) => {
