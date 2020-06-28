@@ -44,7 +44,7 @@ resetButton.addEventListener('click', function(e){
        radios[index].checked = false;
 
     resetMatchPictures('match');
-
+    var location=document.getElementById("locations").selected=0;
     
 });
 
@@ -72,6 +72,16 @@ findMatchesButton.addEventListener('click', function(e)
    
 
     
+    try{
+        var location=document.getElementById("locations").value;
+        
+        
+    }
+    catch(error){
+        alert("Please choose a region");
+        return;
+    }
+
     
 
     // Data validation
