@@ -43,6 +43,10 @@
         width: 16rem;
     }
 
+    footer ul li{
+        padding: 0.5rem;
+    }
+
     
     .socialLink{
         width: 71%;
