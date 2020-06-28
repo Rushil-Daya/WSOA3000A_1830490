@@ -20,6 +20,7 @@ resetButton.disabled=true;
 
 
 var outputNumber= document.getElementById("outputNumber");
+outputNumber.innerHTML= 1;
 
 
 var sliderNumber= document.getElementById("numberMatches");
@@ -59,11 +60,26 @@ var findMatchesButton = document.querySelector('#findMatches');
 findMatchesButton.addEventListener('click', function(e) 
 {
     var numberMatches= document.querySelector("input[id=numberMatches]").value;
-    var gender = document.querySelector('input[name="gender"]:checked').value;
+
+    try {
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+
+    }
+    catch(error){
+        alert("Please select a gender.");
+        return;
+    }
+   
+
+    
+    
 
     // Data validation
-    if()
-   
+    if (gender==null)
+    {
+        console.log('invalid');
+        
+    }
    
     resetButton.disabled=false;
     findMatchesButton.disabled=true;
