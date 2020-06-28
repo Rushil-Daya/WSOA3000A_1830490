@@ -42,8 +42,8 @@ findMatchesButton.addEventListener('click', function(e)
     .then((x) => x.json())
     .then((response) => {
         
-        console.log(response);
-        
+       
+        search(response);
     
     });
 }
@@ -76,7 +76,9 @@ const search = (result) => {
         section.appendChild(spanEmail);
 
 
-    
+        
+
+        
 
         matchesGrid.appendChild(section);
 
