@@ -29,7 +29,7 @@ refreshButton.addEventListener('click', function(e){
     cultured.checked=false;
     alcohol.checked=false;
     var resetName= document.getElementById("name").value="";
-    document.body.style.backgroundColor= 'rgb(256,256,256)';
+    // document.body.style.backgroundColor= 'rgb(256,256,256)';
     output.innerText= " ";
     submitButton.disabled=false;
 });
@@ -46,15 +46,15 @@ submitButton.addEventListener('click', function(e)
     }
 
     output.innerText = name +" we are a " +score + "% match.";
-   switch(true)
-   {
-        case (score >= '70') : document.body.style.backgroundColor= 'rgb(104,217,115)';
-                        break;
-        case (score >= '50') : document.body.style.backgroundColor= 'rgb(245,171,44)';
-                        break;
-        default : document.body.style.backgroundColor= 'rgb(189,177,177)'
+//    switch(true)
+//    {
+//         case (score >= '70') :document.body.style.backgroundColor= 'rgb(104,217,115)';
+//                         break;
+//         case (score >= '50') : document.body.style.backgroundColor= 'rgb(245,171,44)';
+//                         break;
+//          default : document.body.style.backgroundColor= 'rgb(189,177,177)'
     
-   }
+//    }
 
    submitButton.disabled=true;
    refreshButton.disabled=false;
@@ -64,11 +64,12 @@ submitButton.addEventListener('click', function(e)
 age.addEventListener('change', function(e){
     if ( this.value >= '60'  )
     {
-        output.innerText = "Sorry, you are too old :(" ;
-        document.body.style.backgroundColor= 'rgb(252,53,3)' ;
+        output.innerText = "Sorry, you are too old 😔" ;
+        
+        // document.body.style.backgroundColor= 'rgb(252,53,3)' ;
         return;
     } else{
-        document.body.style.backgroundColor = 'rgb(256,256,256)';
+        // document.body.style.backgroundColor = 'rgb(256,256,256)';
         output.innerText= " ";
     }
 
