@@ -1,16 +1,16 @@
- $(document).ready(function(){
-     $("#input").on("keyup",function(){
-         var inputValue = $(this).val().toLowerCase();
+//  $(document).ready(function(){
+//      $("#input").on("keyup",function(){
+//          var inputValue = $(this).val().toLowerCase();
 
          
-         $("#poemLists li a").filter(function(){
-            $(this).toggle($(this).text().toLowerCase().indexOf(inputValue) > -1)
+//          $("#poemLists li a").filter(function(){
+//             $(this).toggle($(this).text().toLowerCase().indexOf(inputValue) > -1)
 
            
            
-         })
-     });
- });
+//          })
+//      });
+//  });
 
 // $(document).ready(function(){
 //     $("#input").on("keyup",function(){
