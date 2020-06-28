@@ -2,6 +2,19 @@
     display: grid;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /*  enable different amoutn of columns based on current screen size  */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /*  enable different amount of columns based on current screen size  */
     grid-gap: 1.25rem;
 }
+
+.match div {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+.match {
+    transition: transform 0.3s; /* Animation */
+}
+.match :hover{
+    transform: scale(1.25);
+} 
+
