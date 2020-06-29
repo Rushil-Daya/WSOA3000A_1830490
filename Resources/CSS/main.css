@@ -210,6 +210,9 @@ a {
     content: " \21AA";
 }
 
+/* .technical a{
+   padding-top: 0.25rem;
+} */
 .return a:hover::after  {
     content: " \21A9" ;
 }
