@@ -118,18 +118,18 @@
         <p>
             Firstly, this API returns very large amounts of data, for example: names, date of birth, age, pictures, email, phone numbers, ID numbers, etc. There is a 
             total of 13 fields that are returned with each having its respective subfields. This has the potential to result in lag and cause the site 
-            to become unresponsive and crash, should large amounts of data be requested. To overcome this, I have set up the input string into 
+            to become unresponsive and crash, should large amounts of data be requested [8]. To overcome this, I have set up the input string into 
             the API to specify what fields to be returned. This significantly reduced the above problem from occurring.
 
         </p>
         <p>
             The returned data needed to be represented in such a way that it can be scaled and moved around freely i.e. without causing the page to crash. 
-            To achieve this, the results are represented via a CSS grid structure. This allows the various matches to dynamically adjust 
+            To achieve this, the results are represented via a CSS grid structure [9]. This allows the various matches to dynamically adjust 
             based on the current page's scaling, for example, if you half the webpage the number of columns and rows will adjust accordingly and not get cramped.
         </p>
         <p>
             As the user must specify their various inputs and constraints, this allows the potential for invalid input data. To prevent this due 
-            care has been taken via implementing more appropriate input elements together with data validation code. This code performs various checks such 
+            care has been taken via implementing more appropriate input elements together with data validation code. This code performs various data validation checks [10] such 
             as: presence checks, data type checks, and range checks. Various coding structures were used to allow this such as the try-catch structure.
             These data validation techniques prevent the site/ webpage from becoming unresponsive and crashing from invalid input data thus reducing 
             the technical impact that invalid input can have on the site.
@@ -151,6 +151,10 @@
                 <li>[5] “How Does Facebook Suggested Friends Actually Work?” Grazia. Available <a href="https://graziadaily.co.uk/life/real-life/facebook-suggested-friends-work/">here.</a></li>
                 <li>[6] “Tinder API Documentation.” Gist. Available <a href="https://gist.github.com/rtt/10403467">here</a></li>
                 <li>[7] “Graph API - Documentation.” Facebook for Developers. Available <a href="https://developers.facebook.com/docs/graph-api/">here.</a></li>
+                <li>[8] “Understanding Resource Timing | Tools for Web Developers.” Google Developers. Available <a href="https//developers.google.com/web/tools/chrome-devtools/network/understanding-resource-timing">here.</a></li>
+                <li>[9] “A Complete Guide to Grid.” CSS-Tricks. Available <a href="https//css-tricks.com/snippets/css/complete-guide-grid/">here.</a></li>
+                <li>[10] “Data Validation and Verification - Revision 1 - GCSE ICT - BBC Bitesize.” BBC Bitesize, 2019. Available <a href="https//www.bbc.co.uk/bitesize/guides/zdvrd2p/revision/1">here.</a></li>
+                <li>[11]</li>
             </ul>
         </p>
 
