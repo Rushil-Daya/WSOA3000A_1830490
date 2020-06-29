@@ -20,7 +20,75 @@
 
     <article>
         <p>
+            My website's  biggest features/focus is the poetry and wedding application/  match finder 
+            and thus using an appropriate external dependency will be most useful on one of these pages. 
+        </p>
+        <p>
+            First I explored the Poetry page and looked at possible (Application programming interfaces) 
+            APIs, Javascript libraries, and CSS frameworks. The API's  were explored to implement the following features:
+            <ul>
+                <li>A search function allowing the user to search for keywords and displaying poems that contain that word.</li>
+                <li>Displaying other poems 
+                    (by any poet) that match the theme/genre of the one the user is currently reading.</li>
+                <li>Display a random poem as per the user's wishes</li>
+
+            </ul>
+        </p>
+        <p>
+            Various APIs were researched and suitable ones were implemented. Looking back, the biggest issue 
+            with these API's was that it didn't add much value to the website. The user could simply open another 
+            tab and search for poems. The functionality allowed by these APIs did make this process easier but it 
+            did not add meaningful value to the overall site.
+
+        </p>
+        <p>
+            Concerning the search functionality, it was more appropriate to use the JQuery javascript library rather than 
+            an API. I then implemented this. The various JQuery files were coded and implemented on the poem homepage. 
+            (These code files can be found in the JavascriptFunctionality folder).The desired outcome was achieved but the 
+            exam constraint was considered: we are only allowed to use ONE dependency. I reviewed this feature and decided that 
+            it was certainly helpful but it did not add meaningful value to the overall site (it was simply one search function on one page). I 
+            could have added more JQuery and search functionalities on other pages, but from a technical view, this was still only one feature 
+            (search). This wasn't sufficient.
+        </p>
+        <p>
+            I then explored options to enhance my poetry. I experimented with bringing my poetry to life via Artificial Reality and 360-degree images. 
+            I implemented this and it worked (these code files can be found in the JavascriptFunctionality folder).
+            Reviewing this, I found that this feature did not represent Johannesburg effectively. The places and images 
+            used were from all over the world and rather than using a complex API, an iframe HTML element could achieve the same outcome. This 
+            idea was consequently scrapped.
+
+        </p>
+        <p>
+            Feeling as if I reached a dead-end I began exploring options for the wedding application/ match finder page. The central feature I 
+            was looking to implement was more coherent methods of processing the input on the wedding application form. After research and review, I 
+            realised that ultimately I wanted to do something more than just provide users with their match score/percentage, I wanted to process the input in 
+            such a way to provide a more meaningful result. This led me to the idea of matches. 
+        </p>
+        <p>
+            Matches in terms of your compatibility and matches with other people (not just with me). I began looking at various existing applications 
+            such as Tinder and Facebook, with special focus around how it suggests possible matches and friends via one's profile. This is what i wanted to 
+            incorporate and I began looking through the Tinder API and Facebook Open Graph API. These APIs would allow me to provide the user with possible matches 
+            in their area. This was very important (that matches were area-based) as it satisfied the exam requirement- "in context of the representation of Johannesburg".
+        </p>
+        <p>
+            This idea, of providing the user with possible matches based on their area, proved to satisfy the exam requirement as it augmented the physical world with 
+            the digital world and it was in the context of the representation of Johannesburg. 
+        </p>
+        <p>
+            For the Tinder and Facebook Open Graph API, I would require the user to log in to their respective accounts and give me certain permissions. This would 
+            allow me to call various commands and provide possible matches. Reviewing this and being realistic, it was unlikely that people would be willing to provide me 
+            with their details to access their Tinder/ Facebook accounts to perform searches on their data (it feels very uncomfortable to allow a website to search through 
+            your social media accounts to find potential matches). After much consideration, the use of the Tinder and Facebook Open Graph API was removed.
+        </p>
+        <h4>CHOSEN API</h4>
+        <p>
             
+            After the above thoughts, I thought of other methods to implement my intended feature of providing users with possible matches. 
+            This led me to an API called Random User Generator [1].
+        </p>
+        <p>
+            This API provides user data based on provided inputs and restraints. In my case, for example, these are gender and number of 
+            matches.  This fittingly solved my idea.
         </p>
     </article>
 
